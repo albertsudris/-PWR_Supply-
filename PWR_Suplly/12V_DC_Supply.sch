@@ -76,8 +76,6 @@ Wire Wire Line
 	5450 3100 5450 3150
 Wire Wire Line
 	5450 3150 4850 3150
-Wire Wire Line
-	3600 2600 3500 2600
 Connection ~ 3600 2600
 Wire Wire Line
 	5450 2600 5800 2600
@@ -89,20 +87,8 @@ Text HLabel 5800 3150 2    50   Output ~ 0
 GND
 Text HLabel 5800 2600 2    50   Output ~ 0
 +12V
-Text HLabel 3150 2600 2    50   Input ~ 0
+Text HLabel 3200 2600 0    50   Input ~ 0
 VCC
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5C8536CB
-P 3500 2600
-F 0 "#FLG0101" H 3500 2675 50  0001 C CNN
-F 1 "PWR_FLAG" H 3500 2774 50  0000 C CNN
-F 2 "" H 3500 2600 50  0001 C CNN
-F 3 "~" H 3500 2600 50  0001 C CNN
-	1    3500 2600
-	1    0    0    -1  
-$EndComp
-Connection ~ 3500 2600
 Wire Wire Line
-	3500 2600 3200 2600
+	3200 2600 3600 2600
 $EndSCHEMATC

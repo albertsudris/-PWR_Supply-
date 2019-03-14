@@ -42,11 +42,15 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
+	5050 3550 5050 3500
+Wire Wire Line
 	5050 3300 6000 3300
 Wire Wire Line
 	5050 3850 6300 3850
 Wire Wire Line
 	6300 3850 6300 3600
+Wire Wire Line
+	6300 4050 6300 3950
 Connection ~ 6300 3850
 $Comp
 L Device:CP1 C?
@@ -72,6 +76,7 @@ Wire Wire Line
 	6900 3850 6300 3850
 Wire Wire Line
 	5050 3300 4650 3300
+Connection ~ 5050 3300
 Wire Wire Line
 	6900 3300 7250 3300
 Connection ~ 6900 3300
@@ -82,7 +87,7 @@ Text HLabel 7250 3850 2    50   Output ~ 0
 GND
 Text HLabel 7250 3300 2    50   Output ~ 0
 +5V
-Text HLabel 4650 3300 0    50   Input ~ 0
+Text HLabel 4600 3300 2    50   Input ~ 0
 VCC
 $Comp
 L power:GND #PWR0103
@@ -95,9 +100,38 @@ F 3 "" H 6300 4050 50  0001 C CNN
 	1    6300 4050
 	1    0    0    -1  
 $EndComp
-Connection ~ 5050 3300
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5C8538B9
+P 5800 3950
+F 0 "#FLG0104" H 5800 4025 50  0001 C CNN
+F 1 "PWR_FLAG" H 5800 4123 50  0000 C CNN
+F 2 "" H 5800 3950 50  0001 C CNN
+F 3 "~" H 5800 3950 50  0001 C CNN
+	1    5800 3950
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	5050 3300 5050 3550
+	5800 3950 6300 3950
+Connection ~ 6300 3950
 Wire Wire Line
-	6300 3850 6300 4050
+	6300 3950 6300 3850
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5C853D15
+P 4800 3450
+F 0 "#FLG0103" H 4800 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 4800 3624 50  0000 C CNN
+F 2 "" H 4800 3450 50  0001 C CNN
+F 3 "~" H 4800 3450 50  0001 C CNN
+	1    4800 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3450 4800 3500
+Wire Wire Line
+	4800 3500 5050 3500
+Connection ~ 5050 3500
+Wire Wire Line
+	5050 3500 5050 3300
 $EndSCHEMATC
