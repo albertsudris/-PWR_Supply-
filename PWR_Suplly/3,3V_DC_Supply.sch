@@ -29,21 +29,6 @@ F 3 "~" H 4700 3500 50  0001 C CNN
 	1    4700 3500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Regulator_Linear:L7805 U?
-U 1 1 5C82BDC5
-P 5950 3100
-AR Path="/5C82A63E/5C82BDC5" Ref="U?"  Part="1" 
-AR Path="/5C82ADC6/5C82BDC5" Ref="U?"  Part="1" 
-AR Path="/5C82B676/5C82BDC5" Ref="U?"  Part="1" 
-AR Path="/5C82BD2C/5C82BDC5" Ref="U4"  Part="1" 
-F 0 "U4" H 5950 3342 50  0000 C CNN
-F 1 "7805" H 5950 3251 50  0000 C CNN
-F 2 "" H 5975 2950 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5950 3050 50  0001 C CNN
-	1    5950 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4700 3350 4700 3100
 Wire Wire Line
@@ -104,4 +89,15 @@ $EndComp
 Wire Wire Line
 	4700 3100 4400 3100
 Connection ~ 4700 3100
+$Comp
+L Regulator_Linear:L78L33_SOT89 U4
+U 1 1 5C924486
+P 5950 3100
+F 0 "U4" H 5950 3342 50  0000 C CNN
+F 1 "L78L33_SOT89" H 5950 3251 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 5950 3300 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 5950 3050 50  0001 C CNN
+	1    5950 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

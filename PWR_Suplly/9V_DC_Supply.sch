@@ -27,19 +27,6 @@ F 3 "~" H 4500 3550 50  0001 C CNN
 	1    4500 3550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Regulator_Linear:L7805 U?
-U 1 1 5C82AE94
-P 5750 3150
-AR Path="/5C82A63E/5C82AE94" Ref="U?"  Part="1" 
-AR Path="/5C82ADC6/5C82AE94" Ref="U2"  Part="1" 
-F 0 "U2" H 5750 3392 50  0000 C CNN
-F 1 "7805" H 5750 3301 50  0000 C CNN
-F 2 "" H 5775 3000 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5750 3100 50  0001 C CNN
-	1    5750 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4500 3400 4500 3150
 Wire Wire Line
@@ -100,4 +87,15 @@ Text HLabel 4100 3150 0    50   Input ~ 0
 VCC
 Wire Wire Line
 	4100 3150 4500 3150
+$Comp
+L Regulator_Linear:L7809 U2
+U 1 1 5C923E85
+P 5750 3150
+F 0 "U2" H 5750 3392 50  0000 C CNN
+F 1 "L7809" H 5750 3301 50  0000 C CNN
+F 2 "" H 5775 3000 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5750 3100 50  0001 C CNN
+	1    5750 3150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
